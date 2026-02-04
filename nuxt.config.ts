@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
 
-  // GitHub Pages configuration
-  ssr: false,
-  
   app: {
     baseURL: '/',
     head: {
@@ -21,5 +18,5 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+  devtools: { enabled: false }
 })
