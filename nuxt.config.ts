@@ -2,8 +2,11 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
 
-
+  // GitHub Pages configuration
+  ssr: false,
+  
   app: {
+    baseURL: '/',
     head: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -11,6 +14,10 @@ export default defineNuxtConfig({
         { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap', rel: 'stylesheet' }
       ]
     }
+  },
+
+  nitro: {
+    preset: 'github-pages'
   },
 
   compatibilityDate: '2025-07-15',
