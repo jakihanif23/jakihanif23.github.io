@@ -36,7 +36,7 @@ function handleMouseMove(e: MouseEvent) {
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
       
       <!-- Greeting Pill -->
-      <div class="inline-flex items-center px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-md mb-8 animate-fade-in-up">
+      <div class="inline-flex items-center px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-md mt-8 mb-8 animate-fade-in-up">
         <span class="w-2 h-2 rounded-full bg-emerald-400 mr-3 animate-pulse"></span>
         <span class="text-emerald-300 text-sm font-medium tracking-wide">Available for Work</span>
       </div>
@@ -49,9 +49,14 @@ function handleMouseMove(e: MouseEvent) {
       <div class="h-1 w-32 bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full mb-8 animate-fade-in-up delay-200"></div>
 
       <!-- Role -->
-      <h2 class="text-2xl md:text-4xl text-slate-300 font-light mb-8 animate-fade-in-up delay-300">
+      <h2 class="text-2xl md:text-4xl text-slate-300 font-light mb-4 animate-fade-in-up delay-300">
         {{ profile.role }}
       </h2>
+
+      <!-- Tagline -->
+      <p class="text-lg md:text-xl text-emerald-400/80 font-medium mb-8 animate-fade-in-up delay-350 tracking-wide">
+        {{ profile.tagline }}
+      </p>
       
       <!-- Summary -->
       <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-12 animate-fade-in-up delay-400 leading-relaxed">
@@ -111,6 +116,7 @@ function handleMouseMove(e: MouseEvent) {
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
+.delay-350 { animation-delay: 0.35s; }
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
 
