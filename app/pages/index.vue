@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: 'Zaky Hanif - Portfolio',
+  title: 'Zaky Hanif Testandy - Fullstack Developer Portfolio',
   meta: [
-    { name: 'description', content: 'Portfolio of Zaky Hanif Testandy, a Frontend Developer based in Bekasi.' }
+    { name: 'description', content: 'Portfolio of Zaky Hanif Testandy — Fullstack Developer building scalable web apps with Vue.js, Node.js, Laravel & RESTful APIs. 3+ years of enterprise experience.' }
   ]
 })
 </script>
